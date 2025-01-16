@@ -1,0 +1,7 @@
+font-style = JetBrainsMono Nerd Font
+theme = Jellybeans
+window-theme = ghostty
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = true
+window-colorspace = "display-p3"
