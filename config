@@ -1,4 +1,5 @@
 font-style = JetBrainsMono Nerd Font
+font-size = 13
 theme = Jellybeans
 window-theme = ghostty
 shell-integration-features = no-cursor
