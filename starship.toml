@@ -11,6 +11,14 @@ disabled = false
 show_always = true
 aliases = { "corpuser034g" = "matchai" }
 
+[directory]
+style = 'bold fg:dark_blue'
+format = '[$path ]($style)'
+truncation_length = 3
+truncation_symbol = '…/'
+truncate_to_repo = false
+read_only = " 󰌾"
+
 [directory.substitutions]
 'Documents' = '󰈙'
 'Downloads' = ' '
@@ -18,7 +26,7 @@ aliases = { "corpuser034g" = "matchai" }
 'Pictures' = ' '
 
 [aws]
-symbol = "  "
+symbol = "  "
 
 [buf]
 symbol = " "
@@ -37,14 +45,6 @@ symbol = " "
 
 [dart]
 symbol = " "
-
-[directory]
-style = 'bold fg:dark_blue'
-format = '[$path ]($style)'
-truncation_length = 3
-truncation_symbol = '…/'
-truncate_to_repo = false
-read_only = " 󰌾"
 
 [docker_context]
 symbol = " "
@@ -70,6 +70,9 @@ tag_symbol = '  '
 [golang]
 symbol = " "
 
+[gradle]
+symbol = " "
+
 [guix_shell]
 symbol = " "
 
@@ -87,12 +90,6 @@ ssh_symbol = " "
 
 [java]
 symbol = " "
-
-[jobs]
-symbol = ' '
-style = 'red'
-number_threshold = 1
-format = '[$symbol]($style)'
 
 [julia]
 symbol = " "
@@ -154,8 +151,11 @@ symbol = " "
 [zig]
 symbol = " "
 
-[gradle]
-symbol = " "
+[jobs]
+symbol = ' '
+style = 'red'
+number_threshold = 1
+format = '[$symbol]($style)'
 
 [palettes.nord]
 dark_blue = '#5E81AC'
