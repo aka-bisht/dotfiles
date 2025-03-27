@@ -1,4 +1,3 @@
-
 # initialize autocompletion
 autoload -U compinit && compinit
 
@@ -30,10 +29,3 @@ ZSH_HIGHLIGHT_STYLES[precommand]='fg=green'
 
 # zsh-auto-suggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# this loads nvm
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-# golang
-export PATH=$PATH:/usr/local/go/bin
