@@ -9,9 +9,14 @@ $java\
 $nodejs\
 $rust\
 $golang\
+$solidity\
+$dotnet\
 $aws\
 $package\
 $docker_context\
+$kubernetes\
+$helm\
+$terraform\
 $jobs\
 $cmd_duration\
 $line_break\
@@ -62,6 +67,12 @@ symbol = ' '
 [java]
 symbol = ' '
 
+[solidity]
+symbol = ' '
+
+[dotnet]
+symbol = ' '
+
 [package]
 symbol = '󰏗 '
 
@@ -76,6 +87,15 @@ style = 'fg:#06969A'
 format = '[$symbol]($style) $path'
 detect_files = ['docker-compose.yml', 'docker-compose.yaml', 'Dockerfile']
 detect_extensions = ['Dockerfile']
+
+[kubernetes]
+symbol = ' '
+
+[helm]
+symbol = ' '
+
+[terraform]
+symbol = ' '
 
 [jobs]
 symbol = ' '
