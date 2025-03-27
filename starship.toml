@@ -1,3 +1,22 @@
+format = """
+$username\
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$python\
+$java\
+$nodejs\
+$rust\
+$golang\
+$aws\
+$package\
+$docker_context\
+$jobs\
+$cmd_duration\
+$line_break\
+$character"""
+
 add_newline = true
 palette = 'nord'
 command_timeout = 1000
@@ -17,145 +36,57 @@ format = '[$path ]($style)'
 truncation_length = 3
 truncation_symbol = '…/'
 truncate_to_repo = false
-read_only = " 󰌾"
 
-[directory.substitutions]
-'Documents' = '󰈙'
-'Downloads' = ' '
-'Music' = ' '
-'Pictures' = ' '
-
-[aws]
-symbol = "  "
-
-[buf]
-symbol = " "
-
-[c]
-symbol = " "
-
-[cmake]
-symbol = " "
-
-[conda]
-symbol = " "
-
-[crystal]
-symbol = " "
-
-[dart]
-symbol = " "
-
-[docker_context]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
-
-[fennel]
-symbol = " "
-
-[fossil_branch]
-symbol = " "
-
-[git_branch]
-symbol = " "
-
-[git_commit]
-tag_symbol = '  '
-
-[golang]
-symbol = " "
-
-[gradle]
-symbol = " "
-
-[guix_shell]
-symbol = " "
-
-[haskell]
-symbol = " "
-
-[haxe]
-symbol = " "
-
-[hg_branch]
-symbol = " "
-
-[hostname]
-ssh_symbol = " "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
-
-[kotlin]
-symbol = " "
-
-[lua]
-symbol = " "
-
-[memory_usage]
-symbol = "󰍛 "
-
-[meson]
-symbol = "󰔷 "
-
-[nim]
-symbol = "󰆥 "
-
-[nix_shell]
-symbol = " "
-
-[nodejs]
-symbol = " "
-
-[ocaml]
-symbol = " "
-
-[package]
-symbol = "󰏗 "
-
-[perl]
-symbol = " "
-
-[php]
-symbol = " "
-
-[pijul_channel]
-symbol = " "
+[fill]
+symbol = ' '
 
 [python]
-symbol = " "
+style = 'teal'
+symbol = ' '
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+pyenv_version_name = true
+pyenv_prefix = ''
 
-[rlang]
-symbol = "󰟔 "
+[nodejs]
+style = 'blue'
+symbol = ' '
 
-[ruby]
-symbol = " "
+[golang]
+style = 'blue'
+symbol = ' '
 
 [rust]
-symbol = "󱘗 "
+style = 'orange'
+symbol = ' '
 
-[scala]
-symbol = " "
+[java]
+symbol = ' '
 
-[swift]
-symbol = " "
+[package]
+symbol = '󰏗 '
 
-[zig]
-symbol = " "
+[aws]
+symbol = ' '
+style = 'yellow'
+format = '[$symbol($profile )(\[$duration\] )]($style)'
+
+[docker_context]
+symbol = ' '
+style = 'fg:#06969A'
+format = '[$symbol]($style) $path'
+detect_files = ['docker-compose.yml', 'docker-compose.yaml', 'Dockerfile']
+detect_extensions = ['Dockerfile']
 
 [jobs]
 symbol = ' '
 style = 'red'
 number_threshold = 1
 format = '[$symbol]($style)'
+
+[cmd_duration]
+min_time = 1000
+style = 'fg:gray'
+format = '[$duration]($style)'
 
 [palettes.nord]
 dark_blue = '#5E81AC'
