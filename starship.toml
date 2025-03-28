@@ -46,18 +46,18 @@ truncate_to_repo = false
 symbol = ' '
 
 [python]
-style = 'teal'
+style = 'yellow'
 symbol = ' '
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 pyenv_version_name = true
 pyenv_prefix = ''
 
 [nodejs]
-style = 'blue'
+style = 'green'
 symbol = ' '
 
 [golang]
-style = 'blue'
+style = 'teal'
 symbol = ' '
 
 [rust]
@@ -66,15 +66,19 @@ symbol = ' '
 
 [java]
 symbol = ' '
+style = 'red'
 
 [solidity]
 symbol = ' '
+style = 'grey'
 
 [c]
 symbol = ' '
+style = 'blue'
 
 [package]
 symbol = '󰏗 '
+style = 'blue'
 
 [aws]
 symbol = ' '
@@ -90,12 +94,15 @@ detect_extensions = ['Dockerfile']
 
 [kubernetes]
 symbol = ' '
+style = 'blue'
 
 [helm]
 symbol = ' '
+style = 'teal'
 
 [terraform]
 symbol = ' '
+style = 'purple'
 
 [jobs]
 symbol = ' '
