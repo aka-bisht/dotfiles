@@ -1,0 +1,8 @@
+font-style = JetBrainsMonoNL Nerd Font
+font-size = 13
+theme = mellow
+window-theme = ghostty
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = true
+window-colorspace = "display-p3"
