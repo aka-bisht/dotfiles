@@ -1,0 +1,25 @@
+// Zed keymap
+[
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      // normal & visual mode.
+      "f f": "file_finder::Toggle",
+      "c a": "editor::ToggleCodeActions",
+      "b k": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Editor && !menu",
+    "bindings": {
+      // common keymaps
+      "ctrl-c": "editor::Copy",
+      "ctrl-a": "editor::SelectAll",
+      "ctrl-v": "editor::Paste",
+      "ctrl-o": "workspace::Open",
+      "ctrl-x": "editor::Cut",
+      "ctrl-f": "buffer_search::Deploy",
+      "ctrl-y": "editor::Redo"
+    }
+  }
+]
