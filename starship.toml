@@ -10,7 +10,6 @@ $nodejs\
 $rust\
 $golang\
 $solidity\
-$c\
 $aws\
 $package\
 $docker_context\
@@ -71,10 +70,6 @@ style = 'red'
 [solidity]
 symbol = ' '
 style = 'grey'
-
-[c]
-symbol = ' '
-style = 'blue'
 
 [package]
 symbol = '󰏗 '
