@@ -1,6 +1,8 @@
-// Zed settings
+// zed settings
 {
+  "show_edit_predictions": false,
   "assistant": {
+    "default_profile": "ask",
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-7-sonnet-latest"
@@ -19,10 +21,7 @@
     "dark": "Mellow"
   },
   "scrollbar": {
-    "axes": {
-      "horizontal": false,
-      "vertical": false
-    }
+    "show": "never"
   },
   "soft_wrap": "editor_width",
   "gutter": {
@@ -43,11 +42,6 @@
     "file_icons": true,
     "git_status": true
   },
-  "current_line_highlight": "none",
-  "project_panel": {
-    "scrollbar": {
-      "show": "never"
-    }
-  },
   "vim_mode": true
 }
+
