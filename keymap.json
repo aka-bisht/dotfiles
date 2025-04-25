@@ -1,2 +1,23 @@
 // Zed keymap
-[]
+[
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "alt-j": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "shift-k": "pane::ActivateNextItem",
+      "alt-k": ["pane::CloseActiveItem", { "close_pinned": false }],
+      "shift-j": "pane::ActivatePreviousItem"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "alt-j": "vim::NormalBefore"
+    }
+  }
+]
