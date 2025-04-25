@@ -43,5 +43,6 @@
     "git_status": true
   },
   "vim_mode": true
+  "hide_mouse": "on_typing_and_movement"
 }
 
