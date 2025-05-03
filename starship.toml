@@ -5,10 +5,15 @@ $git_branch\
 $git_status\
 $fill\
 $python\
+$cpp\
 $java\
 $nodejs\
 $rust\
 $golang\
+$ruby\
+$c\
+$kotlin\
+$dotnet\
 $solidity\
 $aws\
 $package\
@@ -45,23 +50,43 @@ truncate_to_repo = false
 symbol = ' '
 
 [python]
-style = 'yellow'
 symbol = ' '
+style = 'yellow'
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 pyenv_version_name = true
 pyenv_prefix = ''
 
+[cpp]
+symbol = ' '
+style = 'blue'
+
 [nodejs]
-style = 'green'
 symbol = ' '
+style = 'green'
 
 [golang]
-style = 'teal'
 symbol = ' '
+style = 'teal'
+
+[ruby]
+symbol = ' '
+style = 'red'
+
+[c]
+symbol = ' '
+style = 'blue'
+
+[kotlin]
+symbol = ' '
+style = 'purple'
+
+[dotnet]
+symbol = ' '
+style =  'purple'
 
 [rust]
+symbol = '󱘗 '
 style = 'orange'
-symbol = ' '
 
 [java]
 symbol = ' '
@@ -73,7 +98,7 @@ style = 'grey'
 
 [package]
 symbol = '󰏗 '
-style = 'blue'
+style = 'teal'
 
 [aws]
 symbol = ' '
