@@ -29,6 +29,3 @@ ZSH_HIGHLIGHT_STYLES[precommand]='fg=green'
 
 # zsh-autosuggestions
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# zsh-autocomplete
-source /usr/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
