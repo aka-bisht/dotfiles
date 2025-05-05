@@ -42,7 +42,14 @@
     "file_icons": true,
     "git_status": true
   },
-  "vim_mode": true
-  "hide_mouse": "on_typing_and_movement"
+  "vim_mode": true,
+  "hide_mouse": "on_typing_and_movement",
+  "terminal": {
+    "font_weight": 200,
+    "line_height": {
+      "custom": 1.4
+    },
+    "default_height": 450
+  }
 }
 
