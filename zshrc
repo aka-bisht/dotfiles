@@ -29,3 +29,6 @@ ZSH_HIGHLIGHT_STYLES[precommand]='fg=green'
 
 # zsh-autosuggestions
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# fzf
+source <(fzf --zsh)
