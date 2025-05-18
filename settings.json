@@ -32,8 +32,8 @@
     "toolbar.background": "#161617",
     "tab.active_background": "#161617",
     "title_bar.background": "#131314",
-    "border": "#353539",
-    "border.variant": "#353539",
+    "border": "#27272a",
+    "border.variant": "#27272a",
     "terminal.background": "#161617",
     "panel.background": "#1b1b1d",
     "status_bar.background": "#131314"
