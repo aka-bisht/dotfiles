@@ -4,6 +4,7 @@
     "context": "VimControl && !menu",
     "bindings": {
       "alt-j": "vim::NormalBefore"
+      "ctrl-shift-e": "workspace::ToggleLeftDock"
     }
   },
   {
