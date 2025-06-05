@@ -1,11 +1,11 @@
 // Zed settings
 {
   "show_edit_predictions": false,
-  "agent": {
-    "default_profile": "ask",
+    "agent": {
+    "default_profile": "minimal",
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "model": "claude-sonnet-4-latest"
     },
     "version": "2"
   },
@@ -25,8 +25,7 @@
   },
   "soft_wrap": "editor_width",
   "gutter": {
-    "folds": false,
-    "code_actions": false
+    "folds": false
   },
   "experimental.theme_overrides": {
     "toolbar.background": "#161617",
@@ -50,5 +49,6 @@
       "custom": 1.4
     },
     "default_height": 420
-  }
+  },
+  "inline_code_actions": false
 }
