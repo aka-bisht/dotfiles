@@ -22,14 +22,14 @@
   "experimental.theme_overrides": {
     "toolbar.background": "#161617",
     "tab.active_background": "#161617",
-    "panel.background": "#161617",
+    "panel.background": "#1b1b1d",
     "title_bar.background": "#161617",
-    "border": "#252527",
-    "border.variant": "#252527",
+    "border": "#161617",
+    "border.variant": "#161617",
     "terminal.background": "#161617",
-    "tab.inactive_background": "#161617",
+    "tab.inactive_background": "#1b1b1d",
     "status_bar.background": "#161617",
-    "tab_bar.background": "#161617"
+    "tab_bar.background": "#1b1b1d"
   },
   "tabs": {
     "file_icons": true,
