@@ -46,6 +46,9 @@ truncation_length = 3
 truncation_symbol = '…/'
 truncate_to_repo = false
 
+[git_status]
+deleted = ''
+
 [fill]
 symbol = ' '
 
