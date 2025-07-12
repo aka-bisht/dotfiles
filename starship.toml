@@ -6,14 +6,18 @@ $git_status\
 $fill\
 $python\
 $cpp\
+$elixir\
 $java\
 $nodejs\
 $rust\
 $golang\
 $ruby\
+$haskell\
 $c\
 $kotlin\
+$mojo\
 $dotnet\
+$zig\
 $solidity\
 $aws\
 $package\
@@ -22,7 +26,6 @@ $kubernetes\
 $helm\
 $terraform\
 $jobs\
-$cmd_duration\
 $line_break\
 $character"""
 
@@ -63,6 +66,10 @@ pyenv_prefix = ''
 symbol = ' '
 style = 'blue'
 
+[elixir]
+symbol = ' '
+style = 'purple'
+
 [nodejs]
 symbol = ' '
 style = 'green'
@@ -75,6 +82,10 @@ style = 'teal'
 symbol = ' '
 style = 'red'
 
+[haskell]
+symbol = ' '
+style = 'purple'
+
 [c]
 symbol = ' '
 style = 'blue'
@@ -83,9 +94,17 @@ style = 'blue'
 symbol = ' '
 style = 'purple'
 
+[mojo]
+symbol = ' '
+style = 'orange'
+
 [dotnet]
 symbol = ' '
 style =  'purple'
+
+[zig]
+symbol = ' '
+style = 'yellow'
 
 [rust]
 symbol = '󱘗 '
@@ -132,11 +151,6 @@ symbol = ' '
 style = 'red'
 number_threshold = 1
 format = '[$symbol]($style)'
-
-[cmd_duration]
-min_time = 1000
-style = 'fg:gray'
-format = '[$duration]($style)'
 
 [palettes.nord]
 dark_blue = '#5E81AC'
