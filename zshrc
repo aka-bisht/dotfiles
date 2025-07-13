@@ -32,3 +32,30 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # fzf
 source <(fzf --zsh)
+
+# this loads nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# zed
+export PATH=$HOME/.local/bin:$PATH
+
+# java
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
+
+# go
+export PATH=$PATH:/usr/local/go/bin
+
+# remove any existing tmux alias or function
+unalias tmux 2>/dev/null || true
+unfunction tmux 2>/dev/null || true
+
+# boot tmux
+tmux() {
+  if [[ $# -eq 0 ]]; then
+    command tmux new-session -A -s default
+  else
+    command tmux "$@"
+  fi
+}
