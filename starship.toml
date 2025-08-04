@@ -11,6 +11,7 @@ $java\
 $nodejs\
 $rust\
 $golang\
+$bun\
 $ruby\
 $haskell\
 $c\
@@ -77,6 +78,10 @@ style = 'green'
 [golang]
 symbol = ' '
 style = 'teal'
+
+[bun]
+symbol = ' '
+style = 'green'
 
 [ruby]
 symbol = ' '
