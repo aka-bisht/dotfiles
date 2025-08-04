@@ -40,10 +40,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # zed
 export PATH=$HOME/.local/bin:$PATH
 
-# java
-export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
-export PATH=$JAVA_HOME/bin:$PATH
-
 # go
 export PATH=$PATH:/usr/local/go/bin
 
