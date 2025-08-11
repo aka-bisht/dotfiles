@@ -20,6 +20,7 @@ $mojo\
 $dotnet\
 $zig\
 $solidity\
+$deno\
 $aws\
 $package\
 $docker_context\
@@ -122,6 +123,10 @@ style = 'red'
 [solidity]
 symbol = ' '
 style = 'grey'
+
+[deno]
+symbol = ' '
+style = 'green'
 
 [package]
 symbol = '󰏗 '
