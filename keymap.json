@@ -3,7 +3,7 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "alt-j": "vim::NormalBeforea",
+      "alt-j": "vim::NormalBefore",
       "alt-e": "workspace::ToggleLeftDock",
       "ctrl-shift-e": "workspace::ToggleLeftDock"
     }
