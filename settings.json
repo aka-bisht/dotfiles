@@ -1,5 +1,6 @@
 // Zed settings
 {
+  "agent_buffer_font_size": 14.0,
   "show_edit_predictions": false,
   "ui_font_size": 17,
   "icon_theme": "Zed (Default)",
@@ -7,7 +8,7 @@
   "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "buffer_font_weight": 300,
   "relative_line_numbers": true,
-  "agent_font_size": 18,
+  "agent_ui_font_size": 17,
   "theme": {
     "mode": "system",
     "light": "One Light",
