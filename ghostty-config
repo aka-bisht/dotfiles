@@ -1,9 +1,8 @@
-window-colorspace = "display-p3"
+cursor-style-blink = true
 font-family = "JetBrainsMonoNL Nerd Font"
 theme = Mellow
 window-theme = ghostty
-window-padding-balance = true
 cursor-style = block
 font-size = 13
 shell-integration-features = no-cursor
-cursor-style-blink = true
+window-padding-balance = true
