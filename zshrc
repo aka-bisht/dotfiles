@@ -34,6 +34,9 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
+# zed
+export PATH=$HOME/.local/bin:$PATH
+
 # remove any existing tmux alias or function
 unalias tmux 2>/dev/null || true
 unfunction tmux 2>/dev/null || true
