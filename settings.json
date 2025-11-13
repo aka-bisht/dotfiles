@@ -7,7 +7,7 @@
   "buffer_font_size": 17,
   "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "buffer_font_weight": 300,
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "agent_ui_font_size": 18,
   "theme": {
     "mode": "system",
