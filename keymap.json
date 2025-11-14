@@ -1,24 +1,35 @@
 // Zed keymap
+
 [
-  {
-    "context": "VimControl && !menu",
-    "bindings": {
-      "alt-j": "vim::NormalBefore",
-      "alt-e": "workspace::ToggleLeftDock"
-    }
-  },
   {
     "context": "vim_mode == normal",
     "bindings": {
+      // vim essentials
       "shift-k": "pane::ActivateNextItem",
       "alt-k": ["pane::CloseActiveItem", { "close_pinned": false }],
-      "shift-j": "pane::ActivatePreviousItem"
+      "shift-j": "pane::ActivatePreviousItem",
+
+      // vim pane size
+      "alt-u h": "vim::ResizePaneLeft",
+      "alt-u k": "vim::ResizePaneUp",
+      "alt-u l": "vim::ResizePaneRight",
+      "alt-u m": "vim::MaximizePane",
+      "alt-u =": "vim::ResetPaneSizes",
+      "alt-u j": "vim::ResizePaneDown",
+
+      // vim pane movement
+      "alt-n h": "workspace::ActivatePaneLeft",
+      "alt-n l": "workspace::ActivatePaneRight",
+      "alt-n k": "workspace::ActivatePaneUp",
+      "alt-n j": "workspace::ActivatePaneDown"
     }
   },
   {
-    "context": "vim_mode == insert",
+    "context": "VimControl && !menu || vim_mode == insert",
     "bindings": {
-      "alt-j": "vim::NormalBefore"
+      // vim must have
+      "alt-j": "vim::NormalBefore",
+      "alt-e": "workspace::ToggleLeftDock"
     }
   }
 ]
