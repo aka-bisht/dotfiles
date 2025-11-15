@@ -2,25 +2,26 @@
 
 [
   {
-    "context": "vim_mode == normal",
+    "context": "VimControl && !menu",
     "bindings": {
       // vim essentials
-      "shift-k": "pane::ActivateNextItem",
+      "space k": "pane::ActivateNextItem",
       "alt-k": ["pane::CloseActiveItem", { "close_pinned": false }],
-      "shift-j": "pane::ActivatePreviousItem",
+      "space j": "pane::ActivatePreviousItem",
+      "alt-e": "workspace::ToggleLeftDock",
 
       // vim pane size
-      "alt-u h": "vim::ResizePaneLeft",
-      "alt-u k": "vim::ResizePaneUp",
-      "alt-u l": "vim::ResizePaneRight",
-      "alt-u m": "vim::MaximizePane",
-      "alt-u =": "vim::ResetPaneSizes",
-      "alt-u j": "vim::ResizePaneDown",
+      "alt-shift-h": "vim::ResizePaneLeft",
+      "alt-shift-k": "vim::ResizePaneUp",
+      "alt-shift-l": "vim::ResizePaneRight",
+      "alt-shift-n": "vim::ResetPaneSizes",
+      "alt-shift-m": "vim::MaximizePane",
+      "alt-shift-j": "vim::ResizePaneDown",
 
       // vim pane movement
       "alt-n h": "workspace::ActivatePaneLeft",
-      "alt-n l": "workspace::ActivatePaneRight",
       "alt-n k": "workspace::ActivatePaneUp",
+      "alt-n l": "workspace::ActivatePaneRight",
       "alt-n j": "workspace::ActivatePaneDown"
     }
   },
@@ -28,8 +29,7 @@
     "context": "VimControl && !menu || vim_mode == insert",
     "bindings": {
       // vim must have
-      "alt-j": "vim::NormalBefore",
-      "alt-e": "workspace::ToggleLeftDock"
+      "alt-j": "vim::NormalBefore"
     }
   }
 ]
