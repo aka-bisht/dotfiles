@@ -6,7 +6,7 @@
     "bindings": {
       // vim essentials
       "space k": "pane::ActivateNextItem",
-      "alt-k": ["pane::CloseActiveItem", { "close_pinned": false }],
+      "alt-k": "pane::CloseActiveItem",
       "space j": "pane::ActivatePreviousItem",
       "alt-e": "workspace::ToggleLeftDock",
 
@@ -26,7 +26,7 @@
     }
   },
   {
-    "context": "VimControl && !menu || vim_mode == insert",
+    "context": "!menu && vim_mode != normal",
     "bindings": {
       // vim must have
       "alt-j": "vim::NormalBefore"
