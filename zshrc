@@ -36,3 +36,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # zed
 export PATH=$HOME/.local/bin:$PATH
+
+# zoxide
+eval "$(zoxide init zsh)"
