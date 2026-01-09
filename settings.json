@@ -1,7 +1,7 @@
 // Zed settings
 
 {
-  "agent_buffer_font_size": 14.0,
+  "agent_buffer_font_size": 14,
   "show_edit_predictions": false,
   "ui_font_size": 17,
   "icon_theme": "Zed (Default)",
