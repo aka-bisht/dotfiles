@@ -52,5 +52,9 @@
     },
     "default_height": 420
   },
-  "inline_code_actions": false
+  "inline_code_actions": false,
+   "which_key": {
+   "enabled": true,
+   "delay_ms": 250,
+  },
 }
