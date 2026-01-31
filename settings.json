@@ -57,4 +57,7 @@
    "enabled": true,
    "delay_ms": 250,
   },
+   "project_panel": {
+   "auto_fold_dirs": false,
+  },
 }
