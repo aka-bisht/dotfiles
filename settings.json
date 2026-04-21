@@ -2,9 +2,9 @@
 
 {
   "semantic_tokens": "combined",
-  "agent_buffer_font_size": 15,
+  "agent_buffer_font_size": 16,
   "show_edit_predictions": false,
-  "ui_font_size": 17,
+  "ui_font_size": 18,
   "icon_theme": "Zed (Default)",
   "buffer_font_size": 18,
   "buffer_font_family": "FiraMono Nerd Font",
@@ -48,7 +48,7 @@
   "hide_mouse": "on_typing_and_movement",
   "terminal": {
     "font_family": "JetBrainsMonoNL Nerd Font",
-    "font_weight": 300,
+    "font_weight": 400,
     "line_height": {
       "custom": 1.4,
     },
