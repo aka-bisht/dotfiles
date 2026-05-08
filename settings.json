@@ -89,6 +89,6 @@
     "auto_fold_dirs": false,
   },
   "inline_code_actions": false,
-  "code_lens": "menu",
+  "code_lens": "on",
 }
 
