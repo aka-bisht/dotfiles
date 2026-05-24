@@ -19,7 +19,6 @@ $kotlin\
 $mojo\
 $dotnet\
 $zig\
-$solidity\
 $deno\
 $aws\
 $package\
@@ -60,9 +59,6 @@ symbol = ' '
 [python]
 symbol = ' '
 style = 'yellow'
-format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
-pyenv_version_name = true
-pyenv_prefix = ''
 
 [cpp]
 symbol = ' '
@@ -119,10 +115,6 @@ style = 'orange'
 [java]
 symbol = ' '
 style = 'red'
-
-[solidity]
-symbol = ' '
-style = 'grey'
 
 [deno]
 symbol = ' '
