@@ -9,7 +9,6 @@
       "alt-k": "pane::CloseActiveItem",
       "space j": "pane::ActivatePreviousItem",
       "alt-e": "workspace::ToggleLeftDock",
-
       // vim pane size
       "alt-shift-h": "vim::ResizePaneLeft",
       "alt-shift-k": "vim::ResizePaneUp",
@@ -17,15 +16,14 @@
       "alt-shift-n": "vim::ResetPaneSizes",
       "alt-shift-m": "vim::MaximizePane",
       "alt-shift-j": "vim::ResizePaneDown",
-
       // vim pane movement
       "alt-n h": "workspace::ActivatePaneLeft",
       "alt-n k": "workspace::ActivatePaneUp",
       "alt-n l": "workspace::ActivatePaneRight",
       "alt-n j": "workspace::ActivatePaneDown",
-      // personal good to have
+      // good to have
       "alt-c": "workspace::NewCenterTerminal",
-
+      "space c": "workspace::ToggleCenteredLayout",
     }
   },
   {
