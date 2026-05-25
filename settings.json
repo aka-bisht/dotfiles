@@ -90,5 +90,9 @@
   },
   "inline_code_actions": false,
   "code_lens": "on",
+  "centered_layout": {
+    "left_padding": 0.1,
+    "right_padding": 0.1,
+  },
 }
 
