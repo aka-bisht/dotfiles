@@ -42,15 +42,24 @@ eval "$(zoxide init zsh)"
 
 # tmux
  if [[ -o interactive ]]; then
-        case "$TERM" in
-            linux)
-                # do nothing on the native linux system console (TTY)
-                ;;
-            *)
-                if [[ -z "$TMUX" ]]; then
-                    # ensure that the new tmux session also starts zsh
-                    exec tmux set-option -g default-shell "$(command -v zsh)" ';' new-session
-                fi
-                ;;
-        esac
+
+    # disable tmux inside zed
+    if [[ -n "$ZED_TERM" || -n "$TERM_PROGRAM" ]]; then
+        return
     fi
+
+    case "$TERM" in
+        linux)
+            # do nothing on raw linux TTY
+            ;;
+        *)
+            if [[ -z "$TMUX" ]]; then
+                # set shell and start session
+                exec tmux set-option -g \
+                default-shell "$(command -v zsh)" \
+                ';' new-session
+            fi
+            ;;
+    esac
+
+fi
