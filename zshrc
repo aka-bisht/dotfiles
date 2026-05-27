@@ -39,3 +39,18 @@ export PATH=$HOME/.local/bin:$PATH
 
 # zoxide
 eval "$(zoxide init zsh)"
+
+# tmux
+ if [[ -o interactive ]]; then
+        case "$TERM" in
+            linux)
+                # do nothing on the native linux system console (TTY)
+                ;;
+            *)
+                if [[ -z "$TMUX" ]]; then
+                    # ensure that the new tmux session also starts zsh
+                    exec tmux set-option -g default-shell "$(command -v zsh)" ';' new>
+                fi
+                ;;
+        esac
+    fi

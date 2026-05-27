@@ -13,12 +13,6 @@
     "favorite_models": [],
     "model_parameters": [],
   },
-  "agent_servers": {
-    "gemini": {
-      "default_mode": "plan",
-      "type": "registry",
-    },
-  },
   "buffer_font_size": 17,
   "show_edit_predictions": false,
   "icon_theme": "Zed (Default)",
@@ -95,4 +89,3 @@
     "right_padding": 0.15,
   },
 }
-
