@@ -44,7 +44,7 @@ eval "$(zoxide init zsh)"
  if [[ -o interactive ]]; then
 
     # disable tmux inside zed
-    if [[ -n "$ZED_TERM" || -n "$TERM_PROGRAM" ]]; then
+    if [[ -n "$ZED_TERM" ]]; then
         return
     fi
 
