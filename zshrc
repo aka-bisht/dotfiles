@@ -49,7 +49,7 @@ eval "$(zoxide init zsh)"
             *)
                 if [[ -z "$TMUX" ]]; then
                     # ensure that the new tmux session also starts zsh
-                    exec tmux set-option -g default-shell "$(command -v zsh)" ';' new>
+                    exec tmux set-option -g default-shell "$(command -v zsh)" ';' new-session
                 fi
                 ;;
         esac
