@@ -3,7 +3,6 @@ $username\
 $directory\
 $git_branch\
 $git_status\
-$fill\
 $python\
 $cpp\
 $elixir\
@@ -52,9 +51,6 @@ truncate_to_repo = false
 
 [git_status]
 deleted = ''
-
-[fill]
-symbol = ' '
 
 [python]
 symbol = ' '
