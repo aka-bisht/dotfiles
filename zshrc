@@ -41,25 +41,10 @@ export PATH=$HOME/.local/bin:$PATH
 eval "$(zoxide init zsh)"
 
 # tmux
- if [[ -o interactive ]]; then
-
-    # disable tmux inside zed
-    if [[ -n "$ZED_TERM" ]]; then
-        return
-    fi
-
-    case "$TERM" in
-        linux)
-            # do nothing on raw linux TTY
-            ;;
-        *)
-            if [[ -z "$TMUX" ]]; then
-                # set shell and start session
-                exec tmux set-option -g \
-                default-shell "$(command -v zsh)" \
-                ';' new-session
-            fi
-            ;;
-    esac
-
+if [[ -o interactive ]] &&
+   [[ -z "$TMUX" ]] &&
+   [[ -z "$ZED_TERM" ]] &&
+   [[ "$TERM" != linux ]]
+then
+    exec tmux new-session
 fi
