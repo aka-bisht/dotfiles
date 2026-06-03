@@ -48,3 +48,13 @@ if [[ -o interactive ]] &&
 then
     exec tmux new-session
 fi
+
+# zed resue window
+zed() {
+   command zed -r "$@"
+}
+
+# zed open new window
+zedn() {
+   command zed -n "$@"
+}
