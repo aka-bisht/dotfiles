@@ -16,20 +16,20 @@
       "alt-shift-n": "vim::ResetPaneSizes",
       "alt-shift-m": "vim::MaximizePane",
       "alt-shift-j": "vim::ResizePaneDown",
+      // good to have
+      "alt-c": "workspace::NewCenterTerminal",
+      "space c": "workspace::ToggleCenteredLayout",
       // vim pane movement
       "alt-n h": "workspace::ActivatePaneLeft",
       "alt-n k": "workspace::ActivatePaneUp",
       "alt-n l": "workspace::ActivatePaneRight",
       "alt-n j": "workspace::ActivatePaneDown",
-      // good to have
-      "alt-c": "workspace::NewCenterTerminal",
-      "space c": "workspace::ToggleCenteredLayout",
       // move split pane and tab swap
-      "alt-n H": "pane::SwapItemLeft",
+      "alt-n H": "pane::SplitAndMoveLeft",
+      "alt-n K": "pane::SwapItemLeft",
+      "alt-n L": "pane::SwapItemRight",
       "alt-n J": "pane::SplitAndMoveDown",
-      "alt-n K": "pane::SwapItemRight",
-      "alt-n L": "pane::SplitAndMoveRight",
-    }
+    },
   },
   {
     "context": "!menu && vim_mode != normal",
