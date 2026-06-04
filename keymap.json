@@ -24,6 +24,11 @@
       // good to have
       "alt-c": "workspace::NewCenterTerminal",
       "space c": "workspace::ToggleCenteredLayout",
+      // move split pane and tab swap
+      "alt-n H": "pane::SwapItemLeft",
+      "alt-n J": "pane::SplitAndMoveDown",
+      "alt-n K": "pane::SwapItemRight",
+      "alt-n L": "pane::SplitAndMoveRight",
     }
   },
   {
