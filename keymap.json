@@ -19,6 +19,7 @@
       // good to have
       "alt-c": "workspace::NewCenterTerminal",
       "space c": "workspace::ToggleCenteredLayout",
+      "alt-/": "agent::NewTerminalThread",
       // vim pane movement
       "alt-n h": "workspace::ActivatePaneLeft",
       "alt-n k": "workspace::ActivatePaneUp",
@@ -28,8 +29,8 @@
       "alt-n H": "pane::SplitAndMoveLeft",
       "alt-n K": "pane::SwapItemLeft",
       "alt-n L": "pane::SwapItemRight",
-      "alt-n J": "pane::SplitAndMoveDown",
-    },
+      "alt-n J": "pane::SplitAndMoveDown"
+    }
   },
   {
     "context": "!menu && vim_mode != normal",
