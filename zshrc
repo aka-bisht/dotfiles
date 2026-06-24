@@ -40,14 +40,8 @@ export PATH=$HOME/.local/bin:$PATH
 # zoxide
 eval "$(zoxide init zsh)"
 
-# tmux
-if [[ -o interactive ]] &&
-   [[ -z "$TMUX" ]] &&
-   [[ -z "$ZED_TERM" ]] &&
-   [[ "$TERM" != linux ]]
-then
-    exec tmux new-session
-fi
+# golang
+export PATH=$PATH:/usr/local/go/bin
 
 # zed resue window
 zed() {
