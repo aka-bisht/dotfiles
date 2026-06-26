@@ -1,13 +1,17 @@
 // Zed settings
 
 {
+  "centered_layout": {
+    "left_padding": 0.15,
+    "right_padding": 0.15
+  }
   "agent": {
     "dock": "right",
     "default_profile": "ask",
     "default_model": {
       "enable_thinking": true,
       "provider": "openrouter",
-      "model": "nvidia/nemotron-3-super-120b-a12b:free"
+      "model": "google/gemma-4-31b-it:free",
     },
     "favorite_models": [],
     "model_parameters": []
@@ -83,8 +87,4 @@
   },
   "inline_code_actions": false,
   "code_lens": "on",
-  "centered_layout": {
-    "left_padding": 0.15,
-    "right_padding": 0.15
-  }
 }
