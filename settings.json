@@ -4,14 +4,14 @@
   "centered_layout": {
     "left_padding": 0.15,
     "right_padding": 0.15
-  }
+  },
   "agent": {
     "dock": "right",
     "default_profile": "ask",
     "default_model": {
       "enable_thinking": true,
       "provider": "openrouter",
-      "model": "google/gemma-4-31b-it:free",
+      "model": "google/gemma-4-31b-it:free"
     },
     "favorite_models": [],
     "model_parameters": []
@@ -86,5 +86,5 @@
     "auto_fold_dirs": false
   },
   "inline_code_actions": false,
-  "code_lens": "on",
+  "code_lens": "on"
 }
