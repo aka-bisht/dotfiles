@@ -38,16 +38,13 @@
     "folds": false
   },
   "experimental.theme_overrides": {
+    "title_bar.background": "#161617",
     "toolbar.background": "#161617",
     "tab.active_background": "#161617",
-    "panel.background": "#1b1b1d",
-    "title_bar.background": "#161617",
     "border": "#131314",
-    "border.variant": "#161617",
     "terminal.background": "#161617",
-    "tab.inactive_background": "#1b1b1d",
+    "border.variant": "#131314",
     "status_bar.background": "#161617",
-    "tab_bar.background": "#1b1b1d",
     "syntax": {
       "comment": {
         "font_style": "normal"
