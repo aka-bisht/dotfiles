@@ -2,8 +2,8 @@
 
 {
   "centered_layout": {
-    "left_padding": 0.15,
-    "right_padding": 0.15
+    "left_padding": 0.18,
+    "right_padding": 0.18
   },
   "agent": {
     "dock": "right",
@@ -41,9 +41,12 @@
     "title_bar.background": "#161617",
     "toolbar.background": "#161617",
     "tab.active_background": "#161617",
+    "tab_bar.background": "#27272a",
     "border": "#131314",
+    "elevated_surface.background": "#27272a",
     "terminal.background": "#161617",
     "border.variant": "#131314",
+    "tab.inactive_background": "#27272a",
     "status_bar.background": "#161617",
     "syntax": {
       "comment": {
