@@ -1,18 +1,28 @@
-# initialize autocompletion
-autoload -U compinit && compinit
 
-# history setup
-setopt APPEND_HISTORY
+# autocompletion
+autoload -Uz compinit
+compinit
+
+# better completion
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# history
+HISTFILE="$HOME/.zhistory"
+HISTSIZE=10000
+SAVEHIST=10000
+
 setopt SHARE_HISTORY
-HISTFILE=$HOME/.zhistory
-SAVEHIST=1000
-HISTSIZE=999
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt EXTENDED_HISTORY
 
-# autocompletion using arrow keys (based on history)
+# keyboard shortcuts
+bindkey -e
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
+bindkey '^R' history-incremental-search-backward
 
 # starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
